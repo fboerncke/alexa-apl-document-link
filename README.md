@@ -53,6 +53,16 @@ When changing the APL in the authoring tool it appeared to me that pressing "**S
 
 What did work definitely in my experiments was to retrigger a "**Build Model**". After doing this I always saw my changes.
 
+For APLA the docs say clearly: 
+
+> Update your skill to use a linked document
+
+> After creating the APLA document in the authoring tool, you must build your skill in the the Alexa developer console to activate the reference. You must also rebuild the skill if you edit and save the reference doc for the changes to go live in production.
+
+However I did not find such a remark regarding APL when using document links.
+
+
+
 ## Working from the command line (ask V2)
 
 What happens when you clone your skill using ask V2? 
