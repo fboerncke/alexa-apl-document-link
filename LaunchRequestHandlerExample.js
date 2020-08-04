@@ -11,7 +11,6 @@ const LaunchRequestHandler = {
       .addDirective({
         type: "Alexa.Presentation.APL.RenderDocument",
         token: "someToken",
-        //document: documentLink,
         document: {
           src: "doc://alexa/apl/documents/some-apl-template-name",
           type: "Link",
