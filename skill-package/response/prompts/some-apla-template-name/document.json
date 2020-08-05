@@ -1,0 +1,1 @@
+{"type":"APLA","version":"0.8","description":"This document demonstrates a simple APLA template with a spoken utterance.","mainTemplate":{"parameters":["payload"],"item":{"type":"Mixer","description":"example utterance.","items":[{"type":"Speech","contentType":"PlainText","content":"Hello from a linked 'A.P.L.A' document!"}]}}}
