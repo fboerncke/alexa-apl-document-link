@@ -27,7 +27,7 @@ Later on you will be able to handle multiple APLs with different names and even 
 
 ### APLA documents
 
-Within the Developer Console under the "**Build**" tab select "**Multimodal Responses**". Then select "**Audio**". Proceed with "Create Audio Response".
+Within the Developer Console under the "**Build**" tab select "**Multimodal Responses**". Then select "**Audio**". Proceed with "**Create Audio Response**".
 
 Create and Test your APLA document here and save it under a name e.g. "**some-apla-template-name**". 
 
@@ -77,17 +77,21 @@ You can see a number of things going on here:
 - You can return an APL and an APLA within the same response 
 - You have two options to return speech: 
   1. use an APLA document
-  2. "speak(...)" method in the responseBuilder
+  2. use method ".speak(...)" in the responseBuilder
 
-  In case you use both options the utterance defined with "speak(...)" will be heard first 
+  In case you use both options the utterance defined with ".speak(...)" will be heard first 
 
 - Don't mix up the types for the directives, they look very similar:
   - for APL use type "Alexa.Presentation.APL.RenderDocument"
   - for APLA use type "Alexa.Presentation.APLA.RenderDocument"
 
-Make sure to save and deploy your code.
+- Don't mix up the paths for the URIs, they look very similar:
+  - for APL use path prefix "doc://alexa/apl/documents/"
+  - for APLA use path prefix "doc://alexa/apla/documents/"
 
-This should be enough to make the template visible.
+## Save & Deploy
+
+Make sure to save and deploy your code.
 
 ## Testing
 
@@ -125,9 +129,9 @@ What happens when you clone your skill using ask V2?
 
     ask init --hosted-skill-id <some-hosted-skill-id>
 
-It works: luckily you will find JSON artifacts for both your APL and APLA templates within the folder "**skill-package**". I cloned the **complete folder structure** to this github project so you can explore the result yourself.
+It works: luckily you will find JSON artifacts for both your APL and APLA templates within the folder "**skill-package/response**". I cloned the **complete folder structure** to this github project so you can explore the result yourself.
 
-You will see that after a fresh clone the JSON files turn out to be long unformatted one liners. 
+You will see that after a fresh clone the JSON files for APL/APLA turn out to be long unformatted one liners. 
 
 But after reformating them with a pretty printer I had no problems to proceed working on them. In fact you can work on these artifacts using Visual Studio Code or your preferred editor and after deploying them using a "**git push**" this will make your changes visible to your skill code. 
 
