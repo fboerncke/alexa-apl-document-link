@@ -67,7 +67,7 @@ Now use the filenames "**some-apl-template-name**" and "**some-apla-template-nam
         datasources: {},
         packages: [],
       })
-      .speak("Say hello to Document Links!") // we here this utterance before the APLA!
+      .speak("Say hello to Document Links!") // we hear this utterance before the APLA!
       .getResponse();
   },
 };

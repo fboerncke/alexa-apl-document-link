@@ -33,7 +33,7 @@ const LaunchRequestHandler = {
         datasources: {},
         packages: [],
       })
-      .speak("Say hello to Document Links!") // we here this utterance before the APLA!
+      .speak("Say hello to Document Links!") // we hear this utterance before the APLA!
       .getResponse();
   },
 };
